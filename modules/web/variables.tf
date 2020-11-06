@@ -14,7 +14,8 @@ variable "vpc_id" {
 
 variable "name" {
   description = "Name of security group"
-  type        = string
+  type        = list(string)
+  default     = []
 }
 
 variable "use_name_prefix" {
